@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/jianping-grp/echarts-angular2#readme",
   "dependencies": {
-    "echarts":"^3.5.4"
+    "echarts":"^3.5.4",
+    "@types/echarts": "^0.0.6"
   },
   "devDependencies": {
     "@angular/core": "^4.0.0",
