@@ -1,0 +1,27 @@
+{
+  "name": "echarts-angular2",
+  "version": "1.0.0",
+  "description": "echarts module for angular2",
+  "main": "src/index.js",
+  "scripts": {
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jianping-grp/echarts-angular2.git"
+  },
+  "author": "jianpinggrp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jianping-grp/echarts-angular2/issues"
+  },
+  "homepage": "https://github.com/jianping-grp/echarts-angular2#readme",
+  "dependencies": {
+    "echarts":"^3.5.4"
+  },
+  "devDependencies": {
+    "@angular/core": "^4.0.0",
+    "@angular/common": "^4.0.0",
+    "typescript": "^2.2.0"
+  }
+}
