@@ -5,22 +5,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
-var echarts_ng2_component_1 = require("./echarts-ng2.component");
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require('@angular/core');
+var common_1 = require('@angular/common');
+var echarts_ng2_component_1 = require('./echarts-ng2.component');
 var EchartsNg2Module = (function () {
     function EchartsNg2Module() {
     }
+    EchartsNg2Module = __decorate([
+        core_1.NgModule({
+            imports: [
+                common_1.CommonModule
+            ],
+            declarations: [echarts_ng2_component_1.EchartsNg2Component],
+            exports: [echarts_ng2_component_1.EchartsNg2Component]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], EchartsNg2Module);
     return EchartsNg2Module;
 }());
-EchartsNg2Module = __decorate([
-    core_1.NgModule({
-        imports: [
-            common_1.CommonModule
-        ],
-        declarations: [echarts_ng2_component_1.EchartsNg2Component],
-        exports: [echarts_ng2_component_1.EchartsNg2Component]
-    })
-], EchartsNg2Module);
 exports.EchartsNg2Module = EchartsNg2Module;
+//# sourceMappingURL=echarts-ng2.module.js.map

@@ -1,8 +1,7 @@
 {
   "name": "echarts-angular2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "echarts module for angular2",
-  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jianping-grp/echarts-angular2.git"

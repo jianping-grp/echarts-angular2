@@ -5,9 +5,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require('@angular/core');
 var ECharts = require("echarts");
+var EChartOption = ECharts.EChartOption;
 var EchartsNg2Component = (function () {
     function EchartsNg2Component(elementRef) {
         this.elementRef = elementRef;
@@ -108,30 +111,40 @@ var EchartsNg2Component = (function () {
     EchartsNg2Component.prototype.registerTheme = function (themeName, theme) {
         ECharts.registerTheme(themeName, theme);
     };
+    __decorate([
+        core_1.ViewChild('host'), 
+        __metadata('design:type', Object)
+    ], EchartsNg2Component.prototype, "host", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], EchartsNg2Component.prototype, "theme", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', (typeof (_a = typeof EChartOption !== 'undefined' && EChartOption) === 'function' && _a) || Object)
+    ], EchartsNg2Component.prototype, "option", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], EchartsNg2Component.prototype, "style", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String), 
+        __metadata('design:paramtypes', [String])
+    ], EchartsNg2Component.prototype, "group", null);
+    __decorate([
+        core_1.Output(), 
+        __metadata('design:type', Object)
+    ], EchartsNg2Component.prototype, "onBeforeInit", void 0);
+    EchartsNg2Component = __decorate([
+        core_1.Component({
+            selector: 'echarts-ng2',
+            template: "<div #host [ngStyle]=\"style ? style : null\"></div>" // #host中this.host 类型是HTMLElement
+        }), 
+        __metadata('design:paramtypes', [(typeof (_b = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _b) || Object])
+    ], EchartsNg2Component);
     return EchartsNg2Component;
+    var _a, _b;
 }());
-__decorate([
-    core_1.ViewChild('host')
-], EchartsNg2Component.prototype, "host", void 0);
-__decorate([
-    core_1.Input()
-], EchartsNg2Component.prototype, "theme", void 0);
-__decorate([
-    core_1.Input()
-], EchartsNg2Component.prototype, "option", void 0);
-__decorate([
-    core_1.Input()
-], EchartsNg2Component.prototype, "style", void 0);
-__decorate([
-    core_1.Input()
-], EchartsNg2Component.prototype, "group", null);
-__decorate([
-    core_1.Output()
-], EchartsNg2Component.prototype, "onBeforeInit", void 0);
-EchartsNg2Component = __decorate([
-    core_1.Component({
-        selector: 'echarts-ng2',
-        template: "<div #host [ngStyle]=\"style ? style : null\"></div>" // #host中this.host 类型是HTMLElement
-    })
-], EchartsNg2Component);
 exports.EchartsNg2Component = EchartsNg2Component;
+//# sourceMappingURL=echarts-ng2.component.js.map
