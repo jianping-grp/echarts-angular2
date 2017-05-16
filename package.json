@@ -10,6 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/jianping-grp/echarts-angular2.git"
   },
+  "keywords": [
+    "echarts-angular2",
+    "echarts",
+    "angular2",
+    "echarts-ng2",
+    "ng2"
+  ],
   "author": "jianpinggrp",
   "license": "MIT",
   "bugs": {
