@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "echarts module for angular2",
   "main": "src/index.js",
-  "scripts": {
-    "prepublish": "tsc"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jianping-grp/echarts-angular2.git"
